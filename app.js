@@ -129,7 +129,7 @@ app.post("/login", async (req, res) => {
 
 app.post("/ticket",auth,createTicket);
 
-app.get("/tickets/:userId?page=2&limit=10",getTambolaTickets);
+app.get("/tickets/:userId?page=2&limit=10",getTambolaTickets);//not working
 
 
 module.exports=app;
