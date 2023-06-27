@@ -57,7 +57,6 @@ app.post("/register", async (req, res) => {
     )
     user.token = token;
 
-    //update or not in db
     
 
     //handle password situation
@@ -100,7 +99,6 @@ app.post("/login", async (req, res) => {
                 }
             )
             user.token = token;
-            //update or not in db
             
             //handle password situation
             user.password = undefined;
